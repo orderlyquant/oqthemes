@@ -1,5 +1,5 @@
 oq_palette <- c("#219ebc", "#023047", "#ffb703", "#606c38", "#fb8500", "#d00000", "#ffafcc", "#81b29a", "#8ecae6")
-names(oq_palette) <- c("mediumblue", "darkblue", "deepyellow", "olive", "deeporange", "truered", "pink", "lightgreen", "lightblue")
+# names   ("mediumblue", "darkblue", "deepyellow", "olive", "deeporange", "truered", "pink", "lightgreen", "lightblue")
 
 
 #' A qualitative color palette
