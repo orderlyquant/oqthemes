@@ -9,7 +9,18 @@ oq_palette             <- c("#219ebc",   # "mediumblue"
                             "#8ecae6"    # "lightblue"
                           )
 
-oq_palette_diverging   <- c("#f7fbff",   #`seqblue1`
+oq_palette_diverging  <- c("#b2182b",   # `divred2`
+                           "#d6604d",   # `divred3`
+                           "#f4a582",   # `divred4`
+                           "#fddbc7",   # `divred5`
+                           "#dedede",   # `divneutr`
+                           "#d1e5f0",   # `divblue5`
+                           "#92c5de",   # `divblue4`
+                           "#4393c3",   # `divblue3`
+                           "#2166ac"    # `divblue2`
+                          )
+
+oq_palette_sequential  <- c("#f7fbff",   #`seqblue1`
                             "#deebf7",   #`seqblue2`
                             "#c6dbef",   #`seqblue3`
                             "#9ecae1",   #`seqblue4`
@@ -18,17 +29,6 @@ oq_palette_diverging   <- c("#f7fbff",   #`seqblue1`
                             "#2171b5",   #`seqblue7`
                             "#08519c",   #`seqblue8`
                             "#08306b"    #`seqblue9`
-                          )
-
-oq_palette_sequential  <- c("#b2182b",   # `divred2`
-                            "#d6604d",   # `divred3`
-                            "#f4a582",   # `divred4`
-                            "#fddbc7",   # `divred5`
-                            "#dedede",   # `divneutr`
-                            "#d1e5f0",   # `divblue5`
-                            "#92c5de",   # `divblue4`
-                            "#4393c3",   # `divblue3`
-                            "#2166ac"    # `divblue2`
                           )
 
 oq_palette_categorical <- c("#151248",   # `oxfordblue`
@@ -83,20 +83,47 @@ oq_pal_cat <- function() { scales::manual_pal(oq_palette_categorical) }
 #' @rdname scale_oq
 #' @export
 scale_color_oq     <- function(...) { ggplot2::discrete_scale("color", "oq", oq_pal(), ...) }
+
+#' @export
+#' @rdname scale_oq
 scale_color_oq_div <- function(...) { ggplot2::discrete_scale("color", "oq_div", oq_pal_div(), ...) }
+
+#' @export
+#' @rdname scale_oq
 scale_color_oq_seq <- function(...) { ggplot2::discrete_scale("color", "oq_seq", oq_pal_seq(), ...) }
+
+#' @export
+#' @rdname scale_oq
 scale_color_oq_cat <- function(...) { ggplot2::discrete_scale("color", "oq_cat", oq_pal_cat(), ...) }
 
 #' @export
 #' @rdname scale_oq
 scale_colour_oq <- scale_color_oq
+
+#' @export
+#' @rdname scale_oq
 scale_colour_oq_div <- scale_color_oq_div
+
+#' @export
+#' @rdname scale_oq
 scale_colour_oq_seq <- scale_color_oq_seq
+
+#' @export
+#' @rdname scale_oq
 scale_colour_oq_cat <- scale_color_oq_cat
 
 #' @export
 #' @rdname scale_oq
 scale_fill_oq     <- function(...) { ggplot2::discrete_scale("fill", "oq", oq_pal(), ...) }
+
+#' @export
+#' @rdname scale_oq
 scale_fill_oq_div <- function(...) { ggplot2::discrete_scale("fill", "oq_div", oq_pal_div(), ...) }
+
+#' @export
+#' @rdname scale_oq
 scale_fill_oq_seq <- function(...) { ggplot2::discrete_scale("fill", "oq_seq", oq_pal_seq(), ...) }
+
+#' @export
+#' @rdname scale_oq
 scale_fill_oq_cat <- function(...) { ggplot2::discrete_scale("fill", "oq_cat", oq_pal_cat(), ...) }

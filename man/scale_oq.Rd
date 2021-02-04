@@ -2,15 +2,42 @@
 % Please edit documentation in R/color.R
 \name{scale_color_oq}
 \alias{scale_color_oq}
+\alias{scale_color_oq_div}
+\alias{scale_color_oq_seq}
+\alias{scale_color_oq_cat}
 \alias{scale_colour_oq}
+\alias{scale_colour_oq_div}
+\alias{scale_colour_oq_seq}
+\alias{scale_colour_oq_cat}
 \alias{scale_fill_oq}
+\alias{scale_fill_oq_div}
+\alias{scale_fill_oq_seq}
+\alias{scale_fill_oq_cat}
 \title{Discrete color & fill scales based on the ipsum palette}
 \usage{
 scale_color_oq(...)
 
+scale_color_oq_div(...)
+
+scale_color_oq_seq(...)
+
+scale_color_oq_cat(...)
+
 scale_colour_oq(...)
 
+scale_colour_oq_div(...)
+
+scale_colour_oq_seq(...)
+
+scale_colour_oq_cat(...)
+
 scale_fill_oq(...)
+
+scale_fill_oq_div(...)
+
+scale_fill_oq_seq(...)
+
+scale_fill_oq_cat(...)
 }
 \arguments{
 \item{...}{
