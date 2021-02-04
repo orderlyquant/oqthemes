@@ -2,12 +2,12 @@
 % Please edit documentation in R/color.R
 \name{oq_pal}
 \alias{oq_pal}
-\title{A qualitative color palette}
+\title{The default color palette}
 \usage{
 oq_pal()
 }
 \description{
-A qualitative color palette
+The default color palette
 }
 \examples{
 library(scales)
