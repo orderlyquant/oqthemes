@@ -4,7 +4,7 @@
 \alias{oq_pal}
 \title{The default color palette}
 \usage{
-oq_pal()
+oq_pal(reverse)
 }
 \description{
 The default color palette

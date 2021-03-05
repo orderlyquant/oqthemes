@@ -48,7 +48,7 @@ oq_palette_categorical <- c("#151248",   # `oxfordblue`
 #' @examples
 #' library(scales)
 #' scales::show_col(oq_pal()(9))
-oq_pal <- function() { scales::manual_pal(oq_palette) }
+oq_pal <- function(reverse) { if(reverse) scales::manual_pal(rev(oq_palette)) else scales::manual_pal(oq_palette) }
 
 #' The diverging color palette
 #'
@@ -56,7 +56,7 @@ oq_pal <- function() { scales::manual_pal(oq_palette) }
 #' @examples
 #' library(scales)
 #' scales::show_col(oq_pal_div()(9))
-oq_pal_div <- function() { scales::manual_pal(oq_palette_diverging) }
+oq_pal_div <- function(reverse) { if(reverse) scales::manual_pal(rev(oq_palette_diverging)) else scales::manual_pal(oq_palette_diverging) }
 
 #' The sequential color palette
 #'
@@ -64,7 +64,7 @@ oq_pal_div <- function() { scales::manual_pal(oq_palette_diverging) }
 #' @examples
 #' library(scales)
 #' scales::show_col(oq_pal_seq()(9))
-oq_pal_seq <- function() { scales::manual_pal(oq_palette_sequential) }
+oq_pal_seq <- function(reverse) { if(reverse) scales::manual_pal(rev(oq_palette_sequential)) else scales::manual_pal(oq_palette_sequential) }
 
 #' The categorical color palette
 #'
@@ -72,7 +72,7 @@ oq_pal_seq <- function() { scales::manual_pal(oq_palette_sequential) }
 #' @examples
 #' library(scales)
 #' scales::show_col(oq_pal_cat()(9))
-oq_pal_cat <- function() { scales::manual_pal(oq_palette_categorical) }
+oq_pal_cat <- function(reverse) { if(reverse) scales::manual_pal(rev(oq_palette_categorical)) else scales::manual_pal(oq_palette_categorical) }
 
 #' Discrete color & fill scales based on the ipsum palette
 #'
@@ -82,19 +82,19 @@ oq_pal_cat <- function() { scales::manual_pal(oq_palette_categorical) }
 #' @inheritDotParams ggplot2::discrete_scale -expand -position
 #' @rdname scale_oq
 #' @export
-scale_color_oq     <- function(...) { ggplot2::discrete_scale("color", "oq", oq_pal(), ...) }
+scale_color_oq     <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("color", "oq", oq_pal(reverse), ...) }
 
 #' @export
 #' @rdname scale_oq
-scale_color_oq_div <- function(...) { ggplot2::discrete_scale("color", "oq_div", oq_pal_div(), ...) }
+scale_color_oq_div <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("color", "oq_div", oq_pal_div(reverse), ...) }
 
 #' @export
 #' @rdname scale_oq
-scale_color_oq_seq <- function(...) { ggplot2::discrete_scale("color", "oq_seq", oq_pal_seq(), ...) }
+scale_color_oq_seq <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("color", "oq_seq", oq_pal_seq(reverse), ...) }
 
 #' @export
 #' @rdname scale_oq
-scale_color_oq_cat <- function(...) { ggplot2::discrete_scale("color", "oq_cat", oq_pal_cat(), ...) }
+scale_color_oq_cat <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("color", "oq_cat", oq_pal_cat(reverse), ...) }
 
 #' @export
 #' @rdname scale_oq
@@ -114,16 +114,16 @@ scale_colour_oq_cat <- scale_color_oq_cat
 
 #' @export
 #' @rdname scale_oq
-scale_fill_oq     <- function(...) { ggplot2::discrete_scale("fill", "oq", oq_pal(), ...) }
+scale_fill_oq     <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("fill", "oq", oq_pal(reverse), ...) }
 
 #' @export
 #' @rdname scale_oq
-scale_fill_oq_div <- function(...) { ggplot2::discrete_scale("fill", "oq_div", oq_pal_div(), ...) }
+scale_fill_oq_div <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("fill", "oq_div", oq_pal_div(reverse), ...) }
 
 #' @export
 #' @rdname scale_oq
-scale_fill_oq_seq <- function(...) { ggplot2::discrete_scale("fill", "oq_seq", oq_pal_seq(), ...) }
+scale_fill_oq_seq <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("fill", "oq_seq", oq_pal_seq(reverse), ...) }
 
 #' @export
 #' @rdname scale_oq
-scale_fill_oq_cat <- function(...) { ggplot2::discrete_scale("fill", "oq_cat", oq_pal_cat(), ...) }
+scale_fill_oq_cat <- function(reverse = FALSE, ...) { ggplot2::discrete_scale("fill", "oq_cat", oq_pal_cat(reverse), ...) }

@@ -4,7 +4,7 @@
 \alias{oq_pal_div}
 \title{The diverging color palette}
 \usage{
-oq_pal_div()
+oq_pal_div(reverse)
 }
 \description{
 The diverging color palette

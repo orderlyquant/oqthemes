@@ -4,7 +4,7 @@
 \alias{oq_pal_cat}
 \title{The categorical color palette}
 \usage{
-oq_pal_cat()
+oq_pal_cat(reverse)
 }
 \description{
 The categorical color palette

@@ -15,29 +15,29 @@
 \alias{scale_fill_oq_cat}
 \title{Discrete color & fill scales based on the ipsum palette}
 \usage{
-scale_color_oq(...)
+scale_color_oq(reverse = FALSE, ...)
 
-scale_color_oq_div(...)
+scale_color_oq_div(reverse = FALSE, ...)
 
-scale_color_oq_seq(...)
+scale_color_oq_seq(reverse = FALSE, ...)
 
-scale_color_oq_cat(...)
+scale_color_oq_cat(reverse = FALSE, ...)
 
-scale_colour_oq(...)
+scale_colour_oq(reverse = FALSE, ...)
 
-scale_colour_oq_div(...)
+scale_colour_oq_div(reverse = FALSE, ...)
 
-scale_colour_oq_seq(...)
+scale_colour_oq_seq(reverse = FALSE, ...)
 
-scale_colour_oq_cat(...)
+scale_colour_oq_cat(reverse = FALSE, ...)
 
-scale_fill_oq(...)
+scale_fill_oq(reverse = FALSE, ...)
 
-scale_fill_oq_div(...)
+scale_fill_oq_div(reverse = FALSE, ...)
 
-scale_fill_oq_seq(...)
+scale_fill_oq_seq(reverse = FALSE, ...)
 
-scale_fill_oq_cat(...)
+scale_fill_oq_cat(reverse = FALSE, ...)
 }
 \arguments{
 \item{...}{

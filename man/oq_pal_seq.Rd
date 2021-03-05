@@ -4,7 +4,7 @@
 \alias{oq_pal_seq}
 \title{The sequential color palette}
 \usage{
-oq_pal_seq()
+oq_pal_seq(reverse)
 }
 \description{
 The sequential color palette
