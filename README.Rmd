@@ -33,7 +33,8 @@ A theme library for **orderlyquant** work (ggplot2, Rmarkdown, etc)
 - package development process followed the notes
   [here](https://www.notion.so/Snippets-fb64b41b178148e98ff94286e3c26619#59b119faf2164f79b30c41bf1837c461)
 - heavily influenced by the package design of `hrbrthemes`
-- also shaped by ideas found in `cr` and `tpltheme` from Connor Rothschild
+- also shaped by ideas found in [`cr`](https://github.com/connorrothschild/cr)
+  and [`tpltheme`](https://github.com/connorrothschild/cr) from Connor Rothschild
 
 
 ## Installation
@@ -51,26 +52,7 @@ This is a basic example which shows you how to solve a common problem:
 ```{r example}
 library(oqthemes)
 ## basic example code
+##
+## not run:
+## <some ggplot2 object> + scale_color_oq()
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also use
-GitHub Actions to re-render `README.Rmd` every time you push.
-An example workflow can be found
-[here](https://github.com/r-lib/actions/tree/master/examples).
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files,
-so they display on GitHub and CRAN.
