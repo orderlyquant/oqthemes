@@ -48,7 +48,7 @@ oq_palette_categorical <- c("#151248",   # `oxfordblue`
 #' @examples
 #' library(scales)
 #' scales::show_col(oq_pal()(9))
-oq_pal <- function(reverse) { if(reverse) scales::manual_pal(rev(oq_palette)) else scales::manual_pal(oq_palette) }
+oq_pal <- function(reverse = FALSE) { if(reverse) scales::manual_pal(rev(oq_palette)) else scales::manual_pal(oq_palette) }
 
 #' The diverging color palette
 #'
